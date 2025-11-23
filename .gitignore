@@ -24,6 +24,7 @@ cache/
 *.sqlite
 *.pkl
 *.pickle
+docs/
 
 # IDE
 .vscode/
