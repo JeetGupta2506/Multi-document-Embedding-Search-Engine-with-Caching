@@ -7,13 +7,7 @@ from typing import List, Dict, Any
 import time
 
 # Configuration
-# For local development, use localhost
-# For deployment, update to your deployed API URL
-API_URL = st.sidebar.text_input(
-    "API URL", 
-    value="https://multi-document-embedding-search-engine-3nmz.onrender.com",
-    help="Enter your FastAPI backend URL"
-)
+API_URL = "http://localhost:8000"
 
 st.set_page_config(
     page_title="Document Search Engine",
@@ -167,8 +161,8 @@ def main():
     
     # Check API health
     if not check_api_health():
-        st.error("⚠️ Cannot connect to API. Please ensure the server is running at " + API_URL)
-        st.info("Start the server with: `python run_api.py`")
+        st.error("⚠️ Cannot connect to API at: " + API_URL)
+        st.info("💡 Try switching environment in the sidebar or check if the server is running")
         return
     
     # Sidebar
