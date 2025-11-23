@@ -28,6 +28,20 @@ A lightweight semantic search engine with intelligent SHA-256 hash-based caching
 - ✅ 2.5x speedup with multiprocessing on fresh builds
 - ✅ Automatic invalidation on document edits
 
+### Performance Benchmarks
+
+**Batch Processing with Multiprocessing:**
+
+![Batch Processing Benchmark](docs/batch_processing_benchmark.png)
+
+**Multiprocessing Speedup:**
+
+![Multiprocessing Performance](docs/multiprocessing_performance.png)
+
+**Cache Hit Performance:**
+
+![Cache Speedup Comparison](docs/cache_speedup_comparison.png)
+
 ## How to Run Embedding Generation
 
 **Via API (Recommended):**
