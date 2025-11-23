@@ -11,7 +11,7 @@ import time
 # For deployment, update to your deployed API URL
 API_URL = st.sidebar.text_input(
     "API URL", 
-    value="http://localhost:8000",
+    value="https://multi-document-embedding-search-engine-3nmz.onrender.com",
     help="Enter your FastAPI backend URL"
 )
 
