@@ -7,7 +7,13 @@ from typing import List, Dict, Any
 import time
 
 # Configuration
-API_URL = "http://localhost:8000"
+# For local development, use localhost
+# For deployment, update to your deployed API URL
+API_URL = st.sidebar.text_input(
+    "API URL", 
+    value="http://localhost:8000",
+    help="Enter your FastAPI backend URL"
+)
 
 st.set_page_config(
     page_title="Document Search Engine",
